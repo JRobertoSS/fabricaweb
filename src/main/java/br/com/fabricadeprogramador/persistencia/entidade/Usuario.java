@@ -1,15 +1,15 @@
 package br.com.fabricadeprogramador.persistencia.entidade;
 
 public class Usuario {
-	private int id;
+	private Integer id;
 	private String nome;
 	private String login;
 	private String senha;
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getNome() {
@@ -29,6 +29,11 @@ public class Usuario {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	@Override
+	public String toString() {
+		return "Usuario [Id = " + getId() + ", Nome = " + getNome() + ", Login = " + getLogin()
+				+ ", Senha = " + getSenha() + "]";
 	}
 	
 }
